@@ -145,8 +145,25 @@ transform: translateY(20px);
 
 
 
-#main-text>h2{
-	
+#main-text>h2{	
     color: yellow;
+	animation: type 3s steps(22);
+	overflow:hidden;
+	white-space:nowrap;
+	font-family:consolas;
+	display:inline-block;
+	border-right:4px solid yellow;
+	animation-iteration-count: 1;
+    animation-fill-mode: forwards;  
+	
+}
+@keyframes type {
+	0% {
+		width:0ch;
+	}
+	100%{
+		width:22ch;
+	}
 		
 }
+
