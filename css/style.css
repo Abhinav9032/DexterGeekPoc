@@ -2,13 +2,13 @@ body{
 	margin:0;
 	padding:0;
 	font-family:sans-serif;
-	background:#e91e63;	
+	background: rgba(0,0,0,0.7);
+	/* background:#e91e63;	 */
 }
-
 
 ul{
 	position:absolute;
-	left:15%;
+	left:14%;
    background: #fff;
    display: flex;
    border-radius:10px;
@@ -120,4 +120,33 @@ transform: translateY(20px);
 		display:inline-block;
 		margin:10px;
 	}
+}
+#myVideo {
+  position: fixed;  
+  bottom: 0;
+  min-width: 100%; 
+  max-height: 80%;
+}
+
+
+#side-one{
+    position: absolute;
+    top: 20%;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#main-text{
+	font-size: 30px;
+    color: #fff;
+	margin-left:35%;	
+}
+
+
+
+#main-text>h2{
+	
+    color: yellow;
+		
 }
