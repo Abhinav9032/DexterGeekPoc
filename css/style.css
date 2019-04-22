@@ -145,7 +145,7 @@ transform: translateY(20px);
 
 
 
-#main-text>h2{	
+#text-1{	
     color: yellow;
 	animation: type 3s steps(22);
 	overflow:hidden;
@@ -163,6 +163,32 @@ transform: translateY(20px);
 	}
 	100%{
 		width:22ch;
+		#genre{
+			display:block;
+		}
+	}
+		
+}
+#text-2{	
+    color: yellow;
+	animation: retype 5s steps(25);
+	overflow:hidden;
+	white-space:nowrap;
+	font-family:consolas;
+	display:inline-block;
+	
+	animation-iteration-count: 1;
+    
+	
+}
+
+@keyframes retype {
+	0% {
+		
+		width:0ch;
+	}
+	100%{
+		width:25ch;
 	}
 		
 }
