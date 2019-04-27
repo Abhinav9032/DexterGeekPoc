@@ -24,7 +24,7 @@ body{
 }
 
 .navbar-brand img {
-	height: 2rem;	
+	height: 3rem;	
 }
 
 .navbar-nav li{
@@ -41,12 +41,17 @@ body{
 		color:#1ebba3;
 }
 
+/*-- Slider Starts--*/
+.carousel-item{
+height:100vh;
+}
+/*-- Slider Ends--*/
 
 /*--Landing page ---*/
 .home-inner{
 	background-image: url(img/computers.png);
 }
-.caption {
+.carousel-caption {
 	width:100%;
 	max-width:100%;
 	position:absolute;
@@ -54,10 +59,12 @@ body{
 	z-index:1;
 	color:white;
 	text-transform:uppercase;
+	right:0;
+	left:0;
 	
 }
 
-.caption h1{
+.carousel-caption h1{
 	font-size:3.8rem;
 	font-weight:700;
 	letter-spacing : 0.3rem;
@@ -65,7 +72,7 @@ body{
 	padding-bottom: 1rem;
 }
 	
-.caption h3{
+.carousel-caption h3{
 font-size:2rem;
 text-shadow: 0.1rem 0.1rem .5rem black;
 padding-bottom: 1.6rem;	
@@ -244,6 +251,11 @@ padding-bottom: 1.6rem;
 	margin: 0 auto;
 }
 
+.counter-container>div{
+	border-bottom: 2px solid #1ebba3;
+	width:100%;
+}
+
  }
  
  
@@ -279,6 +291,15 @@ padding-bottom: 1.6rem;
   color: white;
 }
 
+.counter-container{
+	padding:0!important;
+	
+}
+
+
+.counter-container>div{
+	border-right: rgba(256,256,256,1);	
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
