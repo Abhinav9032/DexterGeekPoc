@@ -25,7 +25,7 @@ $(".contact-form-btn").click(function(){
 		
 	}
 	
-	var url = "http://localhost:8080/contactUs/form-data";
+	var url = "https://mail-service-demo-ab.herokuapp.com/contactUs/form-data";
 	sendPOSTRequest(url,requestJson);
 
 	
