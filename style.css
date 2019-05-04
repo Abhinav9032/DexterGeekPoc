@@ -259,7 +259,7 @@ padding-bottom: 1.6rem;
  }
  
  
- 
+ /* Contact DexterGeek Section --*/
  
  .contact-section{
   background: url(img/bg.png) no-repeat center;
@@ -317,10 +317,77 @@ textarea.contact-form-text{
   background: #2980b9;
 }
 
+.alert-container-col{
+padding:0!important;
+margin:0!important;
+}
+
+
+#alert-contact-form{
+display:none;
+position:absolute;	
+}
+/* Contact DexterGeek Section --*/
  
  
+/*-- Flip cards section --*/
+.container-cards-section{
+	
+	max-width:1000px;
+	margin:100px auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+
+.card{
+	position:relative;
+	margin: 5px 0;
+	width:280px;
+	height:418px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform:perspective(2000px);
+	transition: 1s;
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+}
  
+.card:active{
+	transform:perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
+}
  
+.card .imgBox{
+	position:relative;
+	width:100%;
+	height:100%;
+	border: 1px solid black;
+	box-sizing: border-box;
+	transform-origin: left;
+	z-index: 1;
+	transition: 1s;	
+}
+
+.card .imgBox:active{
+	transform: rotateY(-135deg);
+}
+
+.card .imgBox .img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	
+}
+
+.card .details{
+	position:absolute;
+	top:0;
+	left:0;
+	box-sizing:border-box;
+	padding:20px;
+}
 
 /*============= COURSE SECTION =============*/
 
