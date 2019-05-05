@@ -352,15 +352,13 @@ position:absolute;
 	box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
 }
  
-.card:active{
-	transform:perspective(2000px) rotate(-10deg);
-	box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
-}
+
+
 .card:hover{
-	transform:perspective(2000px) rotate(-10deg);
+	transform:perspective(2000px) ;
 	box-shadow: inset 20px 0 50px rgba(0,0,0,.5);
 }
- 
+
 .card .imgBox{
 	position:relative;
 	width:100%;
@@ -372,9 +370,6 @@ position:absolute;
 	transition: 1s;	
 }
 
-.card .imgBox:active{
-	transform: rotateY(-135deg);
-}
 .card .imgBox:hover{
 	transform: rotateY(-135deg);
 }
