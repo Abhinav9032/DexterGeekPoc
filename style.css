@@ -178,7 +178,7 @@ border-radius:20px;
 	margin-top:1.5rem;
 }
 
-.lead{
+.service-card>.lead{
 	visibility:hidden;
 }
 
