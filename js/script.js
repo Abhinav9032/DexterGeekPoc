@@ -23,14 +23,6 @@ $(".course-nav").click(function(){
  
  
 //The code to submit Contact form's data using POST type REST web service
-
-
-
-
-
-
-
-
 var alertContactFormSubmission = function(userName){
 	$("#alert-contact-form").css("display","block");	
 	$("#alert-user-submission").text("Hi "+userName+" !! Form is successfully Submitted");
@@ -73,4 +65,9 @@ $.ajax({
 })
 };
 //CommonMethod for POST calls ends
+
+
+$(".service-card").hover(function(){
+	$(".service-card .hidden-info");
+});
 
