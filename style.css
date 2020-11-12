@@ -11,7 +11,7 @@ body{
 	display:block;
 	content:"";
 	height:4rem;
-	margin-top-4rem;
+	margin-top:4rem;
 }
 
 
@@ -19,14 +19,17 @@ body{
 	text-transform:uppercase;
 	font-weight:700;
 	font-size:0.9rem;
-	letter:spacing: 0.1rem;
-	background: rgba(0,0,0,0.6) !important;
+	letter-spacing: 0.1rem;
+	background: rgba(255,255,255,0.6) !important;
 }
 
 .navbar-brand img {
 	height: 3rem;	
 }
-
+.individual-text-block{
+	color:rgba(255, 203, 5, 1);
+	font-size:20px;
+}
 .navbar-nav li{
 	padding-right: 0.7 rem;
 }
@@ -55,7 +58,7 @@ height:100vh;
 	width:100%;
 	max-width:100%;
 	position:absolute;
-	top:38%;
+	top:15%;
 	z-index:1;
 	color:white;
 	text-transform:uppercase;
@@ -70,13 +73,29 @@ height:100vh;
 	letter-spacing : 0.3rem;
 	text-shadow: 0.1rem 0.1rem 0.8rem black;
 	padding-bottom: 1rem;
+	color:rgba(247, 202, 24, 1);
+	
 }
 	
 .carousel-caption h3{
-font-size:2rem;
+	font-family: monospace;
+    font-size: 24px;
 text-shadow: 0.1rem 0.1rem .5rem black;
 padding-bottom: 1.6rem;	
+
+color:rgba(250, 216, 89, 1);
 }
+
+
+.nudgy-description{
+	margin-top:6%;
+	margin-left: -18%;
+    font-family: -webkit-body;
+    font-size: 18px;	
+	color:#fff;
+}
+
+
 
 .btn-lg{
 	border-width:medium;
@@ -437,6 +456,7 @@ position:absolute;
 }
 
 .counter-container{
+	display:none;
 	padding:0!important;
 	
 }
@@ -445,7 +465,94 @@ position:absolute;
 .counter-container>div{
 	border-right: rgba(256,256,256,1);	
 }
+.blog-post-container {
+	font-family: "Roboto", sans-serif;
+	font-size: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	padding: 1.5rem;
+  }
+  
+  .blog-post {
+	width: 75%;
+	max-width: 98rem;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+	display: flex;
+	align-items: center;
+	border-radius: 0.8rem;
+  }
+  
+  .blog-post-img {
+	min-width: 30rem;
+	max-width: 30rem;
+	transform: translateX(-8rem);
+  
+  }
+  
+  .blog-post-img img{
+	height: 370px;
+	object-fit: cover;
+	display:block;
+	border-radius: 0.8rem;
+	opacity: 0.8;
+	  animation-name: fadeInOpacity;
+	  animation-iteration-count: 1;
+	  animation-timing-function: ease-in;
+	  animation-duration: 2s;
+  }
+  @keyframes fadeInOpacity {
+	  0% {
+		  opacity: 0;
+	  }
+	  100% {
+		  opacity: 0.1s;
+	  }
+  }
+  
+  .blog-post-img::before {
+	content: '';
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	max-width: 35rem;
+    background: linear-gradient(to right, rgba(79,172,254,0.8),rgba(0,242,254,0.5)); 
+	box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0.8rem;
+  }
+  
+  .blog-post-date span{
+	display:block;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 1.2rem;
+	font-weight:600;
+	margin: 0.5rem 0;
+  }
+  
+  .blog-post-title{
+	font-size:1.5rem;
+	margin: 0.5rem 0 1rem;
+	text-transform: uppercase;
+	color: #4facfe;
+  
+  }
+  
+  .blog-post-text{
+  
+	margin-bottom: 1.5rem;
+	font-size: 1.5rem;
+	color: rgba(0,0,0,0.7);
+	
+  }
 
+  .service-description-ul>li{
+	  font-size: 1rem;;
+  }
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
